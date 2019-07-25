@@ -7,6 +7,6 @@ jobs:
     docker:
       - image: circleci/node:10.12.0
     steps:
-       - run: echo "hello to C.CI  tests under control of rohmmel , yes it's already done test 500 "
-          
-          
+      - run:
+          name: Deploy master
+          command:  ssh -o "StrictHostKeyChecking no" root@192.81.218.25 'bash -l -c "source /root/.bashrc; cd ~/index-site;chmod 777 build.sh;npm run start"'
