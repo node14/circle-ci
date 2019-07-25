@@ -8,4 +8,4 @@ jobs:
       - image: circleci/node:10.12.0
     steps:
        - checkout
-       - run: echo "hello to C.CI  tests under control of rohmmel , yes it's already done "
+       - run: echo "hello to C.CI  tests under control of rohmmel"
